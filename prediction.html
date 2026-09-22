@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Demand Prediction - AI Power Grid</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">⚡ AI Power Grid</div>
+
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="prediction.html">Prediction</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="history.html">History</a>
+    </div>
+
+</nav>
+
+<section class="page-header">
+
+    <h1>Power Demand Prediction</h1>
+
+    <p>
+        Enter the required information to predict power demand.
+    </p>
+
+</section>
+
+<div class="container">
+
+    <form class="prediction-form" id="predictionForm">
+
+        <div class="form-group">
+
+            <label>Temperature (°C)</label>
+
+            <input
+                type="number"
+                id="temperature"
+                placeholder="Example: 32"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Humidity (%)</label>
+
+            <input
+                type="number"
+                id="humidity"
+                placeholder="Example: 65"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Wind Speed (km/h)</label>
+
+            <input
+                type="number"
+                id="wind"
+                placeholder="Example: 12"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Solar Generation (MW)</label>
+
+            <input
+                type="number"
+                id="solar"
+                placeholder="Example: 80"
+                required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Previous Power Demand (MW)</label>
+
+            <input
+                type="number"
+                id="previousDemand"
+                placeholder="Example: 230"
+                required>
+
+        </div>
+
+        <button type="submit" class="predict-btn">
+            🔮 Predict Power Demand
+        </button>
+
+        <div class="result-box" id="resultBox">
+
+            <h3>Predicted Power Demand</h3>
+
+            <h2 id="resultValue">0 MW</h2>
+
+        </div>
+
+    </form>
+
+</div>
+
+<footer>
+
+    <p>
+        © 2026 AI-Based Power Grid Demand Prediction Platform
+    </p>
+
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
